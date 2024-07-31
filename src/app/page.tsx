@@ -1,11 +1,12 @@
-import Image from "next/image";
+import { ChatUi } from "./components/chat/chat-ui/chat";
 
 export default function Home() {
   return (
     <main className="p-8">
-      <p className="text-center text-7xl">
+      <p className="text-center text-8xl">
         Ascent
       </p>
+      <ChatUi/>
     </main>
   );
 }

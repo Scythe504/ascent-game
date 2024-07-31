@@ -3,7 +3,7 @@ import Abaddon from "next/font/local";
 import { Poppins } from "next/font/google"
 import "./globals.css";
 import localFont from "next/font/local";
-import { original_bold } from "./utils/font";
+import { abaddon_bold } from "./utils/font";
 
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${original_bold.className}`}>{children}</body>
+      <body className={`${abaddon_bold.className}`}>{children}</body>
     </html>
   );
 }
