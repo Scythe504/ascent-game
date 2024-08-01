@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import Abaddon from "next/font/local";
-import { Poppins } from "next/font/google"
 import "./globals.css";
-import localFont from "next/font/local";
-import { abaddon_bold } from "./utils/font";
+import { abaddon_bold } from "../utils/font";
+import { ThemeProvider } from "@/components/ui/theme-provider";
 
 
 export const metadata: Metadata = {
@@ -18,7 +16,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${abaddon_bold.className}`}>{children}</body>
+      <body className={`${abaddon_bold.className}`}>
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+        </body>
     </html>
   );
 }

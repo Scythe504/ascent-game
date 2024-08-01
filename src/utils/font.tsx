@@ -2,7 +2,7 @@ import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 
 export const abaddon_bold = localFont({
-    src: '../../../public/fonts/Abaddon-Bold.woff2',
+    src: '../../public/fonts/Abaddon-Bold.woff2',
     variable: '--font-abaddon-bold',
     display: 'block',
 })
@@ -16,7 +16,7 @@ export const poppins = Poppins({
 })
 
 export const abaddon_light = localFont({
-    src: '../../../public/fonts/Abaddon-Light.woff2',
+    src: '../../public/fonts/Abaddon-Light.woff2',
     variable: '--font-abaddon-light',
     display: 'block',
 })

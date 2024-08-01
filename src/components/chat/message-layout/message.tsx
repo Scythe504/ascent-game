@@ -1,4 +1,4 @@
-import { abaddon_bold, abaddon_light } from "@/app/utils/font"
+import { abaddon_bold, abaddon_light } from "@/utils/font"
 import { ChatBorder } from "./message-border"
 
 
@@ -12,14 +12,14 @@ export const ChatBubble = ({
             User
         </p>
         <ChatBorder>
-
-
-            <div className={`text-3xl ${abaddon_bold.className} 
+            <p className={`text-2xl ${abaddon_bold.className} 
             p-5 border-white 
-            w-fit bg-slate-950/30`
+            w-fit bg-slate-950/30
+            max-w-[650px]
+            `
             }>
                 {message}
-            </div>
+            </p>
         </ChatBorder>
     </div>
 }

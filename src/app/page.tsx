@@ -1,12 +1,14 @@
-import { ChatUi } from "./components/chat/chat-ui/chat";
+import { ChatUi } from "../components/chat/chat-ui/chat";
 
 export default function Home() {
   return (
-    <main className="p-8">
-      <p className="text-center text-8xl">
+    <main className="h-screen flex flex-col overflow-hidden">
+      <p className="text-center text-8xl h-16">
         Ascent
       </p>
-      <ChatUi/>
+      <div className="flex-grow overflow-hidden">
+        <ChatUi/>
+      </div>
     </main>
   );
 }
